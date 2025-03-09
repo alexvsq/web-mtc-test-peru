@@ -1,11 +1,69 @@
 ---
-import Welcome from '../components/Welcome.astro';
-import Layout from '../layouts/Layout.astro';
-
-// Welcome to Astro! Wondering what to do next? Check out the Astro documentation at https://docs.astro.build
-// Don't want to use any of this? Delete everything in this file, the `assets`, `components`, and `layouts` directories, and start fresh.
+import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout>
-	<Welcome />
+  <header
+    class="h-24 bg-linear-to-r from-cyan-500 to-blue-500 flex items-center"
+  >
+    <div class="max-w-7xl mx-auto">
+      <p class="text-5xl font-extrabold text-white">
+        Examen - Simulacro MTC Peru
+      </p>
+    </div>
+  </header>
+
+  <main class="max-w-7xl mx-auto">
+    <article>
+      <p>
+        Estudia las preguntas oficiales y practica con el simulacro del examen
+        teórico de manejo del MTC Perú, que incluye normas de tránsito para
+        todas las categorías.
+      </p>
+      <p>
+        Examen - Simulacro MTC Perú te ofrece las preguntas y respuestas
+        oficiales del examen de normas de tránsito, con acceso completo al
+        balotario actualizado y un simulador de conocimientos para obtener o
+        revalidar tu licencia de conducir en Perú 📌
+      </p>
+      <p>
+        Toda la información se basa en fuentes oficiales, garantizando que
+        practiques con las mismas preguntas que podrías encontrar en el examen
+        real.
+      </p>
+      <p>
+        Características destacadas: ✅ Balotario actualizado: Preguntas
+        idénticas a las del examen oficial, asegurando una preparación efectiva.
+        ✅ Simulacro completo por categoría: Entrena con exámenes específicos
+        según el tipo de licencia que deseas obtener o revalidar. ✅ Corrección
+        detallada: Al finalizar cada simulacro, podrás revisar tus errores y
+        aprender de ellos. Simulador por categorías: 🛑 Clase A ✔️ A1, A2A, A2B,
+        A3A, A3B, A3C 🛑 Clase B ✔️ B2A, B2B, B2C
+      </p>
+      <p>
+        ⚠️ Exención de responsabilidad : Esta aplicación NO está afiliada,
+        respaldada, asociada ni representa a ninguna entidad gubernamental o
+        estatal. Su único propósito es servir como herramienta de estudio y
+        preparación para el examen de reglas de tránsito en Perú. Se recomienda
+        usarla como referencia o guía y complementar el estudio con fuentes
+        oficiales para un mejor conocimiento.
+      </p>
+      <p>
+        🔹 Fuente de información: La información contenida en esta aplicación se
+        ha desarrollado utilizando fuentes oficiales disponibles públicamente: -
+        Ministerio de Transportes y Comunicaciones (MTC): Información sobre las
+        normas de tránsito, señales de tráfico, y conocimientos básicos de
+        seguridad vial.
+        https://www.gob.pe/institucion/mtc/informes-publicaciones/1928110-examen-de-conocimientos-para-postulantes-a-licencias-de-conducir
+        -BALOTARIO DE PREGUNTAS PARA RENDIR EL EXÁMEN DE CONOCIMIENTOS :
+        https://www.transportestumbes.gob.pe/index.php/servicios/balotario-de-preguntas-para-rendir-el-examen-de-conocimientos
+      </p>
+    </article>
+
+    <article class="flex flex-wrap justify-around py-10">
+      <img src="/public/image/1.png" alt="MTC Peru 1" class="max-w-2xs" />
+      <img src="/public/image/2.png" alt="MTC Peru 2" class="max-w-2xs" />
+      <img src="/public/image/5.png" alt="MTC Peru 3" class="max-w-2xs" />
+    </article>
+  </main>
 </Layout>
